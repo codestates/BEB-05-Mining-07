@@ -1,7 +1,7 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { useState } from "react";
 import Web3 from "web3";
+import { useState } from "react";
 
 import routes from "./routes";
 import withTracker from "./withTracker";
