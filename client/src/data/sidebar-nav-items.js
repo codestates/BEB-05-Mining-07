@@ -1,6 +1,6 @@
 export default function() {
   return [
-    // {
+    //  {
     //   title: "Blog Dashboard",
     //   to: "/blog-overview",
     //   htmlBefore: '<i class="material-icons">edit</i>',
@@ -9,32 +9,36 @@ export default function() {
     // {
     //   title: "Blog Posts",
     //   htmlBefore: '<i class="material-icons">vertical_split</i>',
-    //   to: "/blog-posts",
+    //   to: "/blog-posts"
     // },
     // {
     //   title: "Add New Post",
     //   htmlBefore: '<i class="material-icons">note_add</i>',
-    //   to: "/add-new-post",
+    //   to: "/add-new-post"
     // },
     // {
     //   title: "Forms & Components",
     //   htmlBefore: '<i class="material-icons">view_module</i>',
-    //   to: "/components-overview",
+    //   to: "/components-overview"
     // },
     // {
     //   title: "Tables",
     //   htmlBefore: '<i class="material-icons">table_chart</i>',
-    //   to: "/tables",
+    //   to: "/tables"
     // },
     {
-      title: "NFT_TEST_PAGE_1",
-      htmlBefore: '<i class="material-icons">person</i>',
-      to: "/test1",
+      title: "HOME",
+      to: "/Home"
     },
     {
-      title: "NFT_TEST_PAGE_2",
+      title: "Explore Collections",
+      htmlBefore: '<i class="material-icons">person</i>',
+      to: "/test1"
+    },
+    {
+      title: "NFT_info",
       htmlBefore: '<i class="material-icons">error</i>',
-      to: "/test2",
+      to: "/test2"
     }
   ];
 }

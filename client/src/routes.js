@@ -11,10 +11,10 @@ import AddNewPost from "./views/AddNewPost";
 import Errors from "./views/Errors";
 import ComponentsOverview from "./views/ComponentsOverview";
 import Tables from "./views/Tables";
-import BlogPosts from "./views/BlogPosts";
-import test1 from "./views/NFT_TEST_PAGE1";
-import test2 from "./views/NFT_TEST_PAGE2";
-
+import BlogPosts from "./views/Home_NFT";
+import test1 from "./views/Explore_collections";
+import test2 from "./views/NFT_info";
+import Home from "./views/HOME";
 export default [
   {
     path: "/",
@@ -56,6 +56,11 @@ export default [
     path: "/blog-posts",
     layout: DefaultLayout,
     component: BlogPosts
+  },
+  {
+    path: "/Home",
+    layout: DefaultLayout,
+    component: Home
   },
   {
     path: "/test1",

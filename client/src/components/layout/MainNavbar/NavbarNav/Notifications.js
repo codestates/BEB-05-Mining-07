@@ -1,5 +1,6 @@
 import React from "react";
-import { NavItem, NavLink, Badge, Collapse, DropdownItem } from "shards-react";
+import Web3 from "web3";
+import { NavItem, NavLink, Badge, Collapse, DropdownItem, Button } from "shards-react";
 
 export default class Notifications extends React.Component {
   constructor(props) {
@@ -12,6 +13,14 @@ export default class Notifications extends React.Component {
     this.toggleNotifications = this.toggleNotifications.bind(this);
   }
 
+   //connection wallet 비동기 지갑 처리 
+   ConnectionWallet() {
+    const accounts =  window.ethereum.request({
+        method: "eth_requestAccounts",
+    });
+    console.log(accounts[0])
+  }
+
   toggleNotifications() {
     this.setState({
       visible: !this.state.visible
@@ -21,17 +30,7 @@ export default class Notifications extends React.Component {
   render() {
     return (
       <NavItem className="border-right dropdown notifications">
-        <NavLink
-          className="nav-link-icon text-center"
-          onClick={this.toggleNotifications}
-        >
-          <div className="nav-link-icon__wrapper">
-            <i className="material-icons">&#xE7F4;</i>
-            <Badge pill theme="danger">
-              2
-            </Badge>
-          </div>
-        </NavLink>
+        <Button onClick={this.ConnectionWallet} theme="primary" className="mb-2 mr-1" style={{marginTop:5}}>Connect Wallet</Button>
         <Collapse
           open={this.state.visible}
           className="dropdown-menu dropdown-menu-small"
