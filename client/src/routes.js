@@ -14,6 +14,7 @@ import Tables from "./views/Tables";
 import BlogPosts from "./views/Home_NFT";
 import test1 from "./views/Explore_collections";
 import test2 from "./views/NFT_info";
+import test3 from "./views/Search";
 import Home from "./views/HOME";
 export default [
   {
@@ -71,5 +72,10 @@ export default [
     path: "/test2",
     layout: DefaultLayout,
     component: test2
+  },
+  {
+    path: "/test3",
+    layout: DefaultLayout,
+    component: test3
   }
 ];

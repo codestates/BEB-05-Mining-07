@@ -1,7 +1,6 @@
 export default function() {
   return [
-    //  {
-    //   title: "Blog Dashboard",
+    // {
     //   to: "/blog-overview",
     //   htmlBefore: '<i class="material-icons">edit</i>',
     //   htmlAfter: ""
@@ -39,6 +38,11 @@ export default function() {
       title: "NFT_info",
       htmlBefore: '<i class="material-icons">error</i>',
       to: "/test2"
+    },
+    {
+      title: "Search",
+      htmlBefore: '<i class="material-icons">view_module</i>',
+      to: "/test3"
     }
   ];
 }
