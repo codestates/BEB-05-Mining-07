@@ -1,4 +1,4 @@
-# BEB-05-first-07
+# BEB-05-07-Mining
 
 김병일(팀장) : FE,BE,SC   
 김현주 : BackEnd   
